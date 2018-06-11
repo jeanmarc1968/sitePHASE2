@@ -41,10 +41,10 @@
         <nav>
             <!-- zone du menu les liens pour passer de pages en pages -->
         <div class="ancreNav">
-            <a href="index.html" title="Accueil" class="active">Accueil</a>
+            <a href="index.html" title="Accueil">Accueil</a>
             <a href="texte.html" title="Texte">Texte</a>
             <a href="selecteur.html" title="Selecteur">Selecteur</a>
-            <a href="image.html" title="Image">Image</a>
+            <a href="image.html" title="Image" class="active">Image</a>
             <a href="position.html" title="Position">Position</a>
             <a href="zoning.html" title="Zoning">Zoning</a>
             <a href="tableau.html" title="Tableau">Tableau</a>
@@ -55,62 +55,27 @@
             <a href="animation.html" title="Animation">Animation</a>
         </div>
         </nav>
-        <main> <!-- contenu principal -->
-            <aside> <!-- contenu secondaire -->
-                <!-- de côté -->
-            </aside>
-            <section> <!-- zone de contenu regroupement thématique, texte, titres etc.. -->
-                <div>
-                    <h2>Ici un titre 2</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore in aut at laboriosam explicabo, fugiat aliquid voluptas illum repudiandae omnis praesentium ex quo ad consequatur dolor corporis soluta ipsum laborum.</p>
-                    <!-- zone supplémentaire de contenu div -->
-                </div>
-                <span>
-                    <h3>Ici un titre 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nesciunt in voluptas veritatis? Id tempore recusandae dignissimos optio consequatur laudantium alias veritatis aliquam ipsa magni, praesentium modi doloribus, placeat et?</p>
-                        <!-- zone supplémentaire de contenu span -->
-                </span>
-                <article>
-                    <h4>Ici titre 4</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eos quia nisi tempora consequuntur natus distinctio dolorem. Consequuntur quo itaque laborum omnis odit, minima eum sed ab quos enim doloribus!</p>
-                        <!-- zone supplémentaire de contenu article -->
-                </article>
+        <main> <!-- contenu principal -->  
+            <section class="imageFond">
+                <h3>Une image de fond en CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, facilis delectus error nam ullam pariatur dolore accusamus incidunt accusantium maxime nesciunt cupiditate ex suscipit maiores magnam id nostrum hic iusto.</p>
+            </section>
+
+            <section>
+                <h3>Image dans le HTML</h3>
+                <img src="img/toureiffel.jpg" alt="la tour eiffel" title="Une belle image de la Tour Eiffel">
+            </section>
+
+            <section class="aucentre">
+                <h3>Image dans le HTML avec des effets CSS</h3>
+                <img src="img/image.jpg" alt="San Francisco : le Golden Gate" title="Le Golden Gate" class="imagegolden">
+                <img src="img/image.jpg" alt="San Francisco : le Golden Gate" title="Le Golden Gate"class="imagegolden">
+                <img src="img/image.jpg" alt="San Francisco : le Golden Gate" title="Le Golden Gate"class="imagegolden rotation360">
             </section>
 
     </main> <!-- fin main -->
-    <footer> <!-- pied de page -->
-        
-           <div id="1">
-                <ul>
-                    <li>Accueil</li>
-                    <li>Texte</li>
-                    <li>Selecteur</li>
-                </ul>
-           </div>
-
-         <div id="2">
-                <ul>
-                    <li>Image</li>
-                    <li>Position</li>
-                    <li>Zoning</li>
-                </ul>
-         </div>
-
-        <div id="3">
-                <ul>
-                    <li>Tableau</li>
-                    <li>Liste</li>
-                    <li>Lien</li>
-                </ul>
-        </div>
-
-        <div id="4">
-                <ul>
-                    <li>Formulaire</li>
-                    <li>Multimédia</li>
-                    <li>Animation</li>
-                </ul> 
-        </div>   
+    <footer>
+        <!-- pied de page -->
     </footer>
     
 </body>
