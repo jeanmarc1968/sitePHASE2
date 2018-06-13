@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- les typo anton lemonada oswald -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:300,400|Oswald:400,500,600" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- la description qui s'affiche sur un résultat de recherche google -->
+    <meta name="description" content="Site de la phase 2 JM Pantin 2018/2019 LePoleS">
+    <!-- les mots clés utilent pour les moteurs de recherche moins utilisées de nos jours -->
+    <meta name="keywords" content="HTML, CSS, JM, Lepoles, Pantin">
+    <!-- l'auteur de la page -->
+    <meta name="author" content="Jean-Marc BON">
+    <title>Site PHASE 2 - Liste</title>
+    <!-- ma feuille de style -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    
+        <header>
+            <div id="logo">
+                <a href="#logo">
+                    <button type="button"><i class="fas fa-arrow-circle-up"></i></button>
+                </a>
+                <img src="img/logo.png" alt="logo">
+
+            </div> <!-- fin id logo -->
+
+            <div id="slogan">
+                <a href="index.html" title="Mon premier site en HTML accueil">
+                    <h1>Mon premier site en HTML5 et CSS3</h1></a></div>
+            <div id="social">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            </div><!--  fin id social -->
+            <div class="clear"></div>
+
+        </header>
+        <nav>
+            <!-- zone du menu les liens pour passer de pages en pages -->
+        <div class="ancreNav">
+            <a href="index.html" title="Accueil" >Accueil</a>
+            <a href="texte.html" title="Texte">Texte</a>
+            <a href="selecteur.html" title="Selecteur">Selecteur</a>
+            <a href="image.html" title="Image">Image</a>
+            <a href="position.html" title="Position">Position</a>
+            <a href="zoning.html" title="Zoning">Zoning</a>
+            <a href="tableau.html" title="Tableau">Tableau</a>
+            <a href="liste.html" title="Liste" class="active">Liste</a>
+            <a href="lien_menu.html" title="Lien">Lien</a>
+            <a href="formulaire.html" title="Formulaire">Formulaire</a>
+            <a href="multimedia.html" title="Multimédia">Multimédia</a>
+            <a href="animation.html" title="Animation">Animation</a>
+        </div>
+        </nav>
+        <main> <!-- contenu principal -->
+            <h2>Les listes</h2>
+            <section>
+                <h3>Les listes ul</h3>
+                <ul class="fruit">
+                    <li class="fruit" ><i class="far fa-hand-spock" aria-hidden="true"></i> Orange</li>
+                    <li><i class="far fa-hand-spock" aria-hidden="true"></i> Fraise</li>
+                    <li><i class="far fa-hand-spock" aria-hidden="true"></i> Poire</li>
+                 </ul>
+            </section>
+            <hr>
+            <h3>Listes imbriquées</h3>
+            <div id="liste_2">
+                <ul class="imbriquee"> <!-- ul>li*2>ul>li*3 pour tout faire -->
+                    <li class="europe">Europe
+                    <ul><!--  ul>li*3 pour faire une liste avec 3 li -->
+                        <li>France</li>
+                        <li>Italie</li>
+                        <li>Espagne</li>
+                    </ul>
+                </li>
+                <li class="asie">Asie
+                    <ul>
+                        <li>Japon</li>
+                        <li>Vietnam</li>
+                        <li>Chine</li>
+                    </ul>
+                </li>
+                </ul>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+
+    </main> <!-- fin main -->
+    <footer> <!-- pied de page -->
+        
+           <div id="listefooter">
+               <div id="1">
+                    <ul>
+                        <li>Accueil</li>
+                        <li>Texte</li>
+                        <li>Selecteur</li>
+                    </ul>
+               </div>
+    
+             <div id="2">
+                    <ul>
+                        <li>Image</li>
+                        <li>Position</li>
+                        <li>Zoning</li>
+                    </ul>
+             </div>
+    
+            <div id="3">
+                    <ul>
+                        <li>Tableau</li>
+                        <li>Liste</li>
+                        <li>Lien</li>
+                    </ul>
+            </div>
+    
+            <div id="4">
+                    <ul>
+                        <li>Formulaire</li>
+                        <li>Multimédia</li>
+                        <li>Animation</li>
+                    </ul> 
+            </div>   
+           </div>
+    </footer>
+    
+</body>
+</html>
