@@ -6,18 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- les typo anton lemonada oswald -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:300,400|Oswald:400,500,600" rel="stylesheet"> 
-   <!-- font awesome en cdn -->
-    <!-- <link rel="stylesheet" 
-    href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
-    <!-- font awesome en local -->
-    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/fontawesome-all.css">
     <!-- la description qui s'affiche sur un résultat de recherche google -->
     <meta name="description" content="Site de la phase 2 JM Pantin 2018/2019 LePoleS">
     <!-- les mots clés utilent pour les moteurs de recherche moins utilisées de nos jours -->
     <meta name="keywords" content="HTML, CSS, JM, Lepoles, Pantin">
     <!-- l'auteur de la page -->
     <meta name="author" content="Jean-Marc BON">
-    <title>Site PHASE 2 - Formulaire</title>
+    <title>Site PHASE 2 - Animation</title>
     <!-- ma feuille de style -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -54,60 +51,52 @@
             <a href="tableau.html" title="Tableau">Tableau</a>
             <a href="liste.html" title="Liste">Liste</a>
             <a href="lien_menu.html" title="Lien">Lien</a>
-            <a href="formulaire.html" title="Formulaire"class="active">Formulaire</a>
+            <a href="formulaire.html" title="Formulaire">Formulaire</a>
             <a href="multimedia.html" title="Multimédia">Multimédia</a>
-            <a href="animation.html" title="Animation">Animation</a>
+            <a href="animation.html" title="Animation" class="active">Animation</a>
         </div>
         </nav>
         <main> <!-- contenu principal -->
-           <h2>Formulaire<i class="fab fa-wpforms"></i></h2>
-           <section class="formulaire">
-<!-- method; manière de faire circuler les données (POST ou GET) -->
-<!-- action; url de destination -->
-<!-- enctype; pour envoyer le fichier correctement -->
-           <form method="POST" action="inscription.php" enctype="multipart/form-data">
-                <label for="pseudo">pseudo *</label>
-                <input type="text" id="pseudo" name="pseudo" required><br>
+            <h2>Animations en CSS<i class="fas fa-suitcase"></i></h2>
+            <section>
+                <h3>Infobulles</h3>
+                <div class="infoBulle">
+                    <p><a href="#">Passez la souris !<span>Coucou ; je suis une pop-up <i class="far fa-comment-alt"></i>
+                    </span></a> 
+                    </p>
+                    <p><a href="#">Ici aussi...<span>Et moi aussi je une pop-up</span></a>
+                     </p>
+                    <p><a href="#">Une fois encore, allez !<span>Et moi je suis la benjamine ;</span></a> 
+                    </p>
+                </div>
+            </section>
 
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom" required><br>
+            <section>
+                <h3>Effets de survol avec des transitions et des filtres - <i class="fas fa-hand-point-right"></i></h3>
+                <ul class="imgEffets">
+                    <li><img src="img/survol_img1.jpg" alt="la nature c'est beau"></li>
+                    <li><img src="img/survol_img2.jpg" alt="la nature c'est beau"></li>   
+                    <li><img src="img/survol_img3.jpg" alt="la nature c'est beau"></li>    
+                    <li><img src="img/survol_img4.jpg" alt="la nature c'est beau"></li>     
+                </ul>
+            </section>
+            <hr>
 
-                <label for="password">Mot de passe</label>
-                <input type="password" id="passwor" name="password"><br>
-
-                <label for="email">Courriel</label>
-                <input type="email" id="email" name="email"><br>
-
-                <label for="cv">Votre cv en .pdf</label>
-                <input type="file" id="cv" name="cv"><br>
-
-                <p>Quels sont vos fruits préférés ?</p>
-                    <label for="orange">Orange</label>
-                    <input type="checkbox" id="orange" value="orange">
-                    <label for="fraise">Fraise</label>
-                    <input type="checkbox" id="fraise" value="fraise">
-                    <label for="kiwi">Kiwi</label>
-                    <input type="checkbox" id="kiwi" value="kiwi">
-                    <label for="cerise">Cerise</label>
-                    <input type="checkbox" id="cerise" value="cerise"><br>
-
-                    <p>Si vous devez sauver un légume de la destruction;lequel ?</p>
-
-                    <select name="legume">
-                        <option value="poireau">Poireau</option>
-                        <option value="choux de bruxelles">Choux de Bruxelles</option>
-                        <option value="celeri">Cèleri</option>
-                    </select><br>
-                   
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message"
-                    rows="5" cols="25"></textarea><br>
-                    
-                    <input type="submit" name="envoyer" value="Envoyer">
-                    <input type="reset" name="annuler" value="Annuler">
-            </form>
-           </section>
+            <section>
+                <h3>Rotation d'un menu en CSS3</h3>
+                <article id="menuRotate">
+                    <dl class="menu">
+                        <dt class="btnRot">Partager</dt>
+                        <dd><a href="#">...</a></dd>
+                        <dd><a href="#">Google +</a></dd>
+                        <dd><a href="#">Facebook</a></dd>
+                        <dd><a href="#">Twitter</a></dd>
+                    </dl>
+                        <div class="masque"></div>
+                        <div class="ombre"></div>
+                </article>
+                </section>
+                <div class="clear"></div>
 
     </main> <!-- fin main -->
     <footer> <!-- pied de page -->
