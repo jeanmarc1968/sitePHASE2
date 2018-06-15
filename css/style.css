@@ -26,7 +26,7 @@
     vertical-align: baseline;
  }
  
- Zone de message
+ /* Zone de message */
 /* les typos google */
 /* font family : 'Anton', sans-serif;
 font-family: 'lemonada', cursive;
@@ -168,12 +168,12 @@ main {
 }
 
 aside {
-    height: 250px;
+    height: 400px;
     background: #a6d6c3;
 }
 
 section {
-    margin-top: 50px;
+    margin-top: 60px;
     padding: 20px;
 }
 
@@ -184,7 +184,48 @@ footer {
 }
 
 /* fin des zones principales */
+/* zoning page d'accueil */
 
+#zoning0 aside {
+    float: left;
+    height: 525px;
+    width: 30%;
+}
+
+#zoning0 section {
+    float: left;
+    height: 525px;
+    width: 70%;
+    background: linear-gradient(red, yellow);
+    margin-top: 0;
+}
+
+
+
+/* #zoning7 {
+    background: #ffd6d6;
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+
+#zoning7 header {
+    height: 70px;
+    background: purple;
+}
+
+#zoning7 aside {
+    height: 600px;
+    width: 20%;
+    float: left;
+}
+
+#zoning7 .middle {
+   float: left;
+   width: 60%;
+   margin: 0;
+   padding: 0;
+} */
 /* le retour en haut de page */
 
 button {
@@ -501,13 +542,6 @@ footer div {
     padding: 0;
 }
 
-#zoning1 {
-    background: #333;
-    width: 800px;
-    text-align: center;
-    margin: auto;
-    box-shadow: 1px 1px 2px white;
-}
 
 /* zoning 2 */
 
@@ -535,6 +569,7 @@ footer div {
    margin: 0;
    padding: 0;
 }
+
 
 /* zoning 3 */
 
@@ -1106,6 +1141,10 @@ iframe[allowfullscreen] {
     filter: grayscale(1) blur(5px);
 }
 
+.btnRot {
+    padding: 15%;
+}
+
 /* rotation d'un menu css 3 */
 
 #menuRotate {
@@ -1188,8 +1227,28 @@ iframe[allowfullscreen] {
 
 #menuRotate dl:hover {
     transform: rotate(-180deg);
-    animation: bouceIn 3s ease-in-out;
+    animation: bounceIn 0.7s ease-in-out;
 }
+
+/* La règle @ @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation CSS. */
+
+@keyframes bounceIn { /* de là... from c'est 0% */
+    from {transform: rotate(0deg);} /* de là.. */
+    75% {transform: rotate(-2000deg);}
+    90% {transform: rotate(-175deg);}
+    to {transform: rotate(-180deg);} /* à de là to c'est 100%*/
+}
+
+@keyframes bounceOut {
+    from {transform: rotate(0deg);} /* de là.. */
+    0% {transform: rotate(-180deg);}
+    10% {transform: rotate(-165deg);}
+    to {transform: rotate(-360deg);} /* à de là */
+}
+
+/* FIN - THE END */
+
+
 
 /* les typos google */
 /* font family : 'Anton', sans-serif;
