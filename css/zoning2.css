@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* début de la page */
+body {
+    background-image: url('../img/symbole_om.jpg');
+    margin: 0 auto;
+    text-align: center;
+}
+/* En-tête du tableau */
+header {
+    background-image: url('../img/images.png');
+    width: 1200px;
+    height: 80px;
+    /* background: pink; */
+    margin: 0 auto;
+}
+/* colonne de gauche */
+aside {
+    width: 200px;
+    height: 800px;
+    background: green;
+    float: left; 
+}
+
+/* contient tout le tableau */
+#zoning2 {
+    height: 800px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* colonne de droite */
+section {
+    width: 800px;
+    height: 800px;
+    background: blue;
+    float: left;
+}
+
+footer {
+    width: 1200px;
+    background: pink;
+}
+
+.clear {
+    clear:both;
+}
+/* fin de la page zoning1 */

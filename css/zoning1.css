@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* début de la page */
+body {
+    background: pink;
+    margin: 0 auto;
+}
+/* En-tête du tableau */
+header {
+    width: 1200px;
+    height: 80px;
+    background: yellow;
+    margin: 0 auto;
+}
+/* colonne de gauche */
+aside {
+    width: 200px;
+    height: 800px;
+    background: green;
+    float: left; 
+}
+
+/* contient tout le tableau */
+#zoning1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* colonne de droite */
+section {
+    width: 1000px;
+    height: 800px;
+    background: grey;
+    float: left;
+}
+
+.clear {
+    clear:both;
+}
+/* fin de la page zoning1 */
