@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body {
+    background: pink;
+}
+
+.navbar {
+    background: lightgrey;
+    position: fixed; /* le menu est fixé en haut de page */
+    width: 100%; /* toute la largeur */
+    height: 60px;
+}

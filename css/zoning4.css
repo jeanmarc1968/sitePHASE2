@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body {
+    background: pink;
+    /* margin: 0 auto; */
+}
+
+#container {
+    background: #A3DE83;
+    margin: 0 auto;
+    width: 1200px;
+    height: 850px;
+    text-align: center;
+    border: thin solid red;
+}
+
+header {
+    background: purple;
+    height: 100px;
+}
+
+nav {
+    background: plum;
+    height: 50px;
+    border-bottom: 8px solid #333;
+
+
+}
+
+section {
+    background: #176D81;
+    margin: 20px;
+    padding: 0;
+}
+
+.z1, .z4 {
+    height: 250px;
+    width: 50%;
+    float: left;
+    background: green;
+}
+
+.z2, .z3 {
+    height: 250px;
+    width: 50%;
+    float: left;
+    background: lightseagreen;
+}
+
+footer {
+    height: 100px;
+    background: yellow;
+}
+
+.clear {
+    clear: both;
+}
