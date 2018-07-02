@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zoning 5</title>
-    <link href="css/galerie.css" rel="stylesheet">
-    <link href="css/resetjm.css" rel="stylesheet">
+    <link href="css/zoning5.css" rel="stylesheet">
+    <!-- <link href="css/resetjm.css" rel="stylesheet"> -->
 </head>
 <body>
-        <div class="navbar">  
+        <!-- debut navbar -->
+        <div class="navbar">  debut navbar
                 <div class="logo">
                  <a href="#">Bienvenue</a>
                  </div>  
@@ -19,11 +20,83 @@
         </div> <!-- fin de la navbar -->
             
         <div class="main">
+               <section>
+                        <div class="orange">
+                            <h2>Titre de la zone orange</h2>  
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sapiente nobis cum cupiditate nam, accusamus voluptatem maxime vitae ullam voluptas perferendis natus quo facere mollitia officia perspiciatis itaque dignissimos ea? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nobis possimus, voluptatem illo consectetur commodi error adipisci incidunt consequuntur libero. Iure reprehenderit quas nulla sint consequatur eius facere,velit quisquam.</p> 
+                            
+                        </div>
+        
+                        <div class="violette">
+                                <h2>Titre de la zone violette</h2>
+                              <figure>  <img src="img/philharmonie01.png" alt="logo" height="150px" width="200px"></figure>
+                                <figcaption>Philarmonie de Paris</figcaption>
+                        </div>
+                        <div class="rouge">
+                                <h2>Titre de la zone rouge</h2>
+                                <aside>
+                                <!-- <iframe height="300px" src="https://youtube/nPLV7lGbmT4" allowfullscreen></iframe> -->
+                                <img src="img/tibet.png">
+                                </aside> 
+                                <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo deleniti autem soluta vero ea temporibus consequuntur repellendus quidem illum, et accusantium quia saepe dolor aliquid esse libero? Voluptatum, autem voluptate?</article>
+                        </div>                      
+               </section>
+       
+        <div class="clear"></div>
+
+        <h2>Formulaire</h2>
+        <div class="formulaire">
+                        <h2>Formulaire</h2>
+                <form method="POST" action="inscription.php" enctype="multipart/form-data">
+                <label for="pseudo">pseudo *</label>
+                <input type="text" id="pseudo" name="pseudo" required><br>
+
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" required><br>
+
+                <label for="password">Mot de passe</label>
+                <input type="password" id="passwor" name="password"><br>
+
+                <label for="email">Courriel</label>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="cv">Votre cv en .pdf</label>
+                <input type="file" id="cv" name="cv"><br>
+                
+                <p>Quels sont vos activitées préférées ?</p>
+                    <label for="lecture">Lecture</label>
+                    <input type="checkbox" id="lecture" value="lecture">
+                    <label for="football">Football</label>
+                    <input type="checkbox" id="football" value="football">
+                    <label for="photo">Photo</label>
+                    <input type="checkbox" id="photo" value="photo">
+                    <label for="voyage">Voyage</label>
+                    <input type="checkbox" id="voyage" value="voyage"><br>
+
+                    <p>Si vous devez en choisir qu'une; laquelle ?</p>
+
+                    <select name="activité">
+                        <option value="lecture">Lecture</option>
+                        <option value="football">Football</option>
+                        <option value="photo">Photo</option>
+                        <option value="voyage">Voyage</option>
+                    </select><br>
+                   
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"
+                    rows="5" cols="25"></textarea><br>
+                    
+                    <input type="submit" name="envoyer" value="Envoyer">
+                    <input type="reset" name="annuler" value="Annuler">
+                </form>
+            
 
 
         </div>
-
-
+</div>
+        <footer>Juin 2016</footer> 
 
     
     

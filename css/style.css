@@ -183,6 +183,11 @@ footer {
     margin-top: 15px;
 }
 
+.fond_orange {
+    background: orange;
+    color: white;
+}
+
 /* fin des zones principales */
 /* zoning page d'accueil */
 
@@ -229,6 +234,16 @@ footer {
 /* le retour en haut de page */
 
 button {
+    font-size: 350%;
+    background: transparent; /* l'icône est transparente */
+    border: none;
+    color: #2c3e50;
+    position: fixed; /* le button est fixe à 40px du bas et à 20 de la droite */
+    bottom: 40px;
+    right: 20px;
+}
+
+.boutonhaut {
     font-size: 350%;
     background: transparent; /* l'icône est transparente */
     border: none;
